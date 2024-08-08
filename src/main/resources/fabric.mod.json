@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "distomc",
+	"version": "${version}",
+	"name": "DistoMC",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/distomc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"patchi.distomc.DistoMC"
+		],
+		"client": [
+			"patchi.distomc.DistoMCClient"
+		],
+		"fabric-datagen": [
+			"patchi.distomc.DistoMCDataGenerator"
+		]
+	},
+	"mixins": [
+		"distomc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
